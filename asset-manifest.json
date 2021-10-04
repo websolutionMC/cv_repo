@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/cv_repo/static/css/main.5739ad41.chunk.css",
-    "main.js": "/cv_repo/static/js/main.025f9f32.chunk.js",
-    "main.js.map": "/cv_repo/static/js/main.025f9f32.chunk.js.map",
+    "main.js": "/cv_repo/static/js/main.db8a2afa.chunk.js",
+    "main.js.map": "/cv_repo/static/js/main.db8a2afa.chunk.js.map",
     "runtime-main.js": "/cv_repo/static/js/runtime-main.95df005c.js",
     "runtime-main.js.map": "/cv_repo/static/js/runtime-main.95df005c.js.map",
-    "static/js/2.49041a6f.chunk.js": "/cv_repo/static/js/2.49041a6f.chunk.js",
-    "static/js/2.49041a6f.chunk.js.map": "/cv_repo/static/js/2.49041a6f.chunk.js.map",
+    "static/js/2.68479e41.chunk.js": "/cv_repo/static/js/2.68479e41.chunk.js",
+    "static/js/2.68479e41.chunk.js.map": "/cv_repo/static/js/2.68479e41.chunk.js.map",
     "index.html": "/cv_repo/index.html",
     "static/css/main.5739ad41.chunk.css.map": "/cv_repo/static/css/main.5739ad41.chunk.css.map",
-    "static/js/2.49041a6f.chunk.js.LICENSE.txt": "/cv_repo/static/js/2.49041a6f.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/cv_repo/static/media/logo.6ce24c58.svg"
+    "static/js/2.68479e41.chunk.js.LICENSE.txt": "/cv_repo/static/js/2.68479e41.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.95df005c.js",
-    "static/js/2.49041a6f.chunk.js",
+    "static/js/2.68479e41.chunk.js",
     "static/css/main.5739ad41.chunk.css",
-    "static/js/main.025f9f32.chunk.js"
+    "static/js/main.db8a2afa.chunk.js"
   ]
 }
