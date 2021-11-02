@@ -3,7 +3,9 @@
         "contact": "Kontakt",
         "aboutMe": "O mnie",
         "experience": "Doświadczenie",
-        "skills": "Znajomość technologii"
+        "skills": "Znajomość technologii",
+        "education": "Wykształcenie",
+        "languages": "Języki"
         
     },
     "language": {

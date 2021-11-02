@@ -3,7 +3,9 @@
         "contact": "Contact",
         "aboutMe": "About Me",
         "experience": "Experience",
-        "skills": "Skills"
+        "skills": "Skills",
+        "education": "Education",
+        "languages": "Languages"
         
     },
     "language": {
