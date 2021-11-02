@@ -24,7 +24,7 @@ const ButtonStyled = styled.button`
 const LanguageButton = () => {
 
 
-  const {i18n } = useTranslation();
+  const {t, i18n } = useTranslation();
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -34,10 +34,10 @@ const LanguageButton = () => {
     <>
       <LanguageButtonStyled>
         <ButtonStyled type="button" onClick={() => changeLanguage('pl')}>
-          <img src={pl} />
+          <img src={pl}  alt={t('language.pl')}/>
         </ButtonStyled>
         <ButtonStyled type="button" onClick={() => changeLanguage('en')}>
-          <img src={en} />
+          <img src={en}  alt={t('language.en')}/>
         </ButtonStyled>
       </LanguageButtonStyled>
     </>

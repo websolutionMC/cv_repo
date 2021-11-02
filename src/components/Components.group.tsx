@@ -1,11 +1,4 @@
 import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
-
-
-export const Line = styled.div`
-  width: 100%;
-  border-bottom: 1px solid rgba(245, 245, 245, 0.2);
-`;
 
 export const MyDataWrapper = styled.div`
   position: relative;
@@ -78,8 +71,12 @@ export const Title = styled.h3`
 
 export const About = styled.div`
   margin-bottom: 3rem;
+
+  border-bottom: 1px solid rgba(4, 33, 46, 0.2);
+
   &:last-child {
     margin-bottom: 0;
+    border-bottom: 0;
   }
 
   &:first-child {
@@ -88,7 +85,8 @@ export const About = styled.div`
 `;
 
 export const YearCompany = styled.div`
-  min-width: 150px;
+  min-width: 200px;
+  line-height: 1.25rem;
 
   @media screen and (max-width: 600px) {
     min-width: 150px;
@@ -101,22 +99,66 @@ export const YearCompany = styled.div`
 
   h5 {
     text-transform: uppercase;
-    color: #848c90;
+    color: #a8aeb1;
     font-weight: 600;
     margin: 0;
     padding: 0;
   }
 `;
 
-export const Wrapper = styled.div`
+export const InfoCompany = styled.div`
+  h4 {
+    text-transform: uppercase;
+    color: #4db8c9;
+    font-size: 16px;
+    margin: 0 0 .5rem 0;
+    padding: 0;
+  }
+  p {
+    margin: 0;
+  }
+`;
+
+
+interface PropsSkills{
+  skills?: boolean; 
+}
+
+export const Wrapper = styled.div<PropsSkills>`
   display: flex;
   flex-direction: row;
   margin: 20px 0;
+
+  ${({ skills }) =>
+  skills &&
+  css`
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+
+    h4 {
+      text-transform: uppercase;
+      color: #848c99;
+      font-weight: 500;
+      margin: .5rem;
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  `}
+
 
   @media screen and (max-width:600px) {
     flex-direction: column;
   }
 `;
+
+
+
 
 /*
 
@@ -179,22 +221,7 @@ export const PlaceEducation = styled.h4`
   font-weight: 300;
   margin: 0;
 `;
-export const Progress = styled.span`
-  position: relative;
-  width: 100%;
-  height: ${({ skills }) => (skills ? "10px" : "6px")};
-  background: ${({ skills }) => (skills ? "#f0f0f0" : "#081921")};
-  display: block;
-  margin-top: 5px;
 
-  div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
-  }
-`;
 
 
 export const Title2 = styled.h2`
@@ -208,18 +235,7 @@ export const Title2 = styled.h2`
 
 
 
-export const SpecJob = styled.div`
-  h4 {
-    text-transform: uppercase;
-    color: #2a7da2;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-  }
-  p {
-    margin: 0;
-  }
-`;
+
 
 export const ProjekctLogo = styled.div`
   position: relative;

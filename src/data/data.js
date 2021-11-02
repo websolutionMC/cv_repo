@@ -3,7 +3,7 @@ export const data = {
     name: "Mateusz",
     surname: "Czarnik",
     job: "Fullstack Developer",
-    aboutMe: "",
+    aboutMe: "Ullamco elit amet nulla fugiat excepteur incididunt consectetur irure quis. Consequat occaecat sunt quis minim veniam consectetur aute quis officia elit. Adipisicing do cillum Lorem in. Laboris ea pariatur eu aliquip nulla magna officia deserunt labore. Deserunt laboris amet ut reprehenderit nisi aute. Consectetur aliqua mollit do veniam ullamco cillum ipsum officia. Lorem amet velit fugiat nulla eiusmod dolor aute qui velit.",
     contact: {
       phone: "+48 728 248 756",
       email: "mateusz.czarnik1@gmail.com",
@@ -83,31 +83,31 @@ export const data = {
     skills: [
       {
         name: "HTML",
-        percent: "99%",
+        percent: 99,
       },
       {
         name: "CSS",
-        percent: "90%",
+        percent: 90,
       },
       {
         name: "JavaScripts",
-        percent: "50%",
+        percent: 50,
       },
       {
         name: "React",
-        percent: "50%",
+        percent: 50,
       },
       {
         name: "SQL",
-        percent: "99%",
+        percent: 99,
       },
       {
         name: "PHP 7.4",
-        percent: "99%",
+        percent: 99,
       },
       {
         name: "PHP 8.0",
-        percent: "50%",
+        percent: 50,
       },
     ]
   },
@@ -115,7 +115,7 @@ export const data = {
       name: "Mateusz",
       surname: "Czarnik",
       job: "Fullstack Developer",
-      aboutMe: "",
+      aboutMe: "Commodo Lorem reprehenderit voluptate culpa non. Velit pariatur nulla non nostrud veniam consectetur ad exercitation. Dolore qui ea aliqua enim. Sit quis occaecat et velit pariatur velit aliqua ex est quis aliqua. Reprehenderit anim esse tempor labore ea ut amet.",
       contact: {
         phone: "+48 728 248 756",
         email: "mateusz.czarnik1@gmail.com",
@@ -195,31 +195,31 @@ export const data = {
       skills: [
         {
           name: "HTML",
-          percent: "99%",
+          percent: 99,
         },
         {
           name: "CSS",
-          percent: "90%",
+          percent: 90,
         },
         {
           name: "JavaScripts",
-          percent: "50%",
+          percent: 50,
         },
         {
           name: "React",
-          percent: "50%",
+          percent: 50,
         },
         {
           name: "SQL",
-          percent: "99%",
+          percent: 99,
         },
         {
           name: "PHP 7.4",
-          percent: "99%",
+          percent: 99,
         },
         {
           name: "PHP 8.0",
-          percent: "50%",
+          percent: 50,
         },
       ]
     

@@ -2,7 +2,12 @@
     "titles": {
         "contact": "Contact",
         "aboutMe": "About Me",
-        "experience": "Experience"
+        "experience": "Experience",
+        "skills": "Skills"
         
+    },
+    "language": {
+        "pl": "Polish",
+        "en": "English"
     }
 }
