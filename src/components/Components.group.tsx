@@ -53,11 +53,11 @@ export const Job = styled.span`
   font-weight: 300;
 `;
 
-export const ContactWrapper = styled.div`
+export const AboutLeft = styled.div`
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 2rem 0;
+    padding: 1rem 0;
     border-bottom: 1px solid rgba(245, 245, 245, 0.2);
 `;
 

@@ -9,7 +9,7 @@ import RightColumn from './components/default/RightColumn';
 import LanguageButton from './components/LanguageButton';
 import Progress from './components/base/ProgressBar';
 
-import { MyDataWrapper, Img, LayerImg, ImgWrapper, MyName, Job, ContactWrapper, Title, About, Wrapper, YearCompany, InfoCompany } from './components/Components.group';
+import { MyDataWrapper, Img, LayerImg, ImgWrapper, MyName, Job, AboutLeft, Title, About, Wrapper, YearCompany, InfoCompany } from './components/Components.group';
 import './App.css';
 import { data } from './data/data';
 
@@ -38,11 +38,21 @@ const App: React.FC = () => {
               <Job>{myDate.job}</Job>
             </MyName>
           </MyDataWrapper>
-          <ContactWrapper>
+          <AboutLeft>
             <Title>
               {t("titles.contact")}
             </Title>
-          </ContactWrapper>
+          </AboutLeft>
+          <AboutLeft>
+            <Title>
+              {t("titles.education")}
+            </Title>
+          </AboutLeft>
+          <AboutLeft>
+            <Title>
+              {t("titles.languages")}
+            </Title>
+          </AboutLeft>
         </LeftColumn>
         <RightColumn>
           <LanguageButton></LanguageButton>

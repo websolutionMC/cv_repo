@@ -3,7 +3,7 @@ import styled from "styled-components";
  const Container = styled.div`
   position: relative;
   width: 100%;
-  max-width: 90vw;
+  max-width: 80vw;
   min-height: 100px;
   background: #fff;
   display: grid;

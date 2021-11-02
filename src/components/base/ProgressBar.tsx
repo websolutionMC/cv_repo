@@ -13,6 +13,7 @@ const ProgressStyled = styled.span<ProgressSize>`
   display: block;
   margin-top: 5px;
   border: 1px solid #747474;
+  box-shadow: 3px 5px 4px -2px rgb(156 156 156);
 
   @keyframes progress-bar-stripes {
     from  { background-position: 1rem 0; }
