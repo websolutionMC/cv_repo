@@ -2,6 +2,12 @@
     "titles": {
         "contact": "Kontakt",
         "aboutMe": "O mnie",
-        "experience": "Doświadczenie"
+        "experience": "Doświadczenie",
+        "skills": "Znajomość technologii"
+        
+    },
+    "language": {
+        "pl": "Polski",
+        "en": "Angielski"
     }
 }
