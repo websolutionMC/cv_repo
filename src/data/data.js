@@ -183,7 +183,7 @@ export const data = {
           job: "Fullstack Developer",
           date: {
             start: "03.2018",
-            end: "still",
+            end: "now",
           },
           info:  
             [

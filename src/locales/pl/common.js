@@ -5,7 +5,7 @@ export const TRANSLATIONS_PL = {
         experience: "Doświadczenie",
         skills: "Znajomość technologii",
         education: "Wykształcenie",
-        languages: "Języki"
+        languages: "Języki obce"
         
     },
     language: {

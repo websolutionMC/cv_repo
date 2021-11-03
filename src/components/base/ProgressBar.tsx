@@ -50,6 +50,17 @@ const ProgressBarBgStyled = styled.div<Animated>`
     }
     `;
 
+const ProgressBarValue = styled.span`
+    font-weight: bold;
+    font-size: .5rem;
+    left: 50%;
+    color: whitesmoke;
+    position: absolute;
+    top: 1px;
+
+`;
+
+
 
 type ChildProps = {
   percent: number,
@@ -58,7 +69,11 @@ type ChildProps = {
 
 const ProgressBarBg : React.FC<ChildProps> = ({percent, animated}) => {
   return (
-    <ProgressBarBgStyled animated={animated} style={{ width: `${percent}%` }}></ProgressBarBgStyled>
+    <ProgressBarBgStyled animated={animated} style={{ width: `${percent}%` }}>
+      <ProgressBarValue>
+        {percent} %
+      </ProgressBarValue>
+    </ProgressBarBgStyled>
   )
 }
 
@@ -72,10 +87,8 @@ ProgressBarBg.defaultProps = {
   animated: false
 };
 
-interface ProgressInterface{
-  percent: number,
+interface ProgressInterface extends ChildProps{
   small?: boolean,
-  animated? :boolean
 }
 
 

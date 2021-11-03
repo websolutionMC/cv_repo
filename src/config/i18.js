@@ -10,7 +10,7 @@ import { TRANSLATIONS_EN } from "../locales/en/common.js";
 
 i18n.use(initReactI18next).init({
 	fallbackLng: 'pl',
-	debug: true,
+	debug: false,
 	interpolation: {
 		escapeValue: false,
 		formatSeparator: ",",

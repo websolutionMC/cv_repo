@@ -1,4 +1,7 @@
 import 'react-i18next';
+import i18n from 'i18next';
+
+import { FaBeer } from 'react-icons/fa';
 
 import DefaultTag from './components/defaultStyle'
 import Container from './components/default/Container';
@@ -21,7 +24,11 @@ const App: React.FC = () => {
 
   const { t } = useTranslation();
 
-  const myDate = data.pl;
+  const getLanguage = () => i18n.language;
+  
+  const lng = getLanguage();  
+
+   let myDate = data[lng];
 
   return (
     <>
