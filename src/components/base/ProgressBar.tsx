@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import PropTypes from "prop-types";
 
 interface ProgressSize{
@@ -21,7 +21,11 @@ const ProgressStyled = styled.span<ProgressSize>`
   }
 `;
 
-const ProgressBarBgStyled = styled.div`
+interface Animated {
+  animated?: boolean
+}
+
+const ProgressBarBgStyled = styled.div<Animated>`
   position: absolute;
     top: 0;
     left: 0;
@@ -37,34 +41,49 @@ const ProgressBarBgStyled = styled.div`
     background-size: 1rem 1rem;    
     transition: width .6s ease;
     background-color: #03a9f4;
-    animation: progress-bar-stripes 1s linear infinite;
-`;
+    
+    ${({ animated }) =>
+    animated &&
+      css`
+        animation: progress-bar-stripes 1s linear infinite;
+      `
+    }
+    `;
 
 
 type ChildProps = {
-  percent: number
+  percent: number,
+  animated?: boolean
 }
 
-const ProgressBarBg : React.FC<ChildProps> = ({percent}) => {
+const ProgressBarBg : React.FC<ChildProps> = ({percent, animated}) => {
   return (
-    <ProgressBarBgStyled style={{ width: `${percent}%` }}></ProgressBarBgStyled>
+    <ProgressBarBgStyled animated={animated} style={{ width: `${percent}%` }}></ProgressBarBgStyled>
   )
 }
 
 ProgressBarBg.propTypes = {
 	percent: PropTypes.number.isRequired,
+  animated: PropTypes.bool,
+};
+
+ProgressBarBg.defaultProps = {
+	percent: 0,
+  animated: false
 };
 
 interface ProgressInterface{
   percent: number,
-  small?: boolean
+  small?: boolean,
+  animated? :boolean
 }
 
 
-const Progress: React.FC<ProgressInterface> = ({percent, small}) => {
+const Progress: React.FC<ProgressInterface> = ({percent, small, animated}) => {
+  
   return (
     <ProgressStyled small>
-      <ProgressBarBg percent={percent}></ProgressBarBg>
+      <ProgressBarBg animated={animated}  percent={percent}></ProgressBarBg>
     </ProgressStyled>
   )
 }
@@ -72,11 +91,13 @@ const Progress: React.FC<ProgressInterface> = ({percent, small}) => {
 Progress.propTypes = {
   percent: PropTypes.number.isRequired,
   small: PropTypes.bool,
+  animated: PropTypes.bool,
 }
 
 Progress.defaultProps = {
 	percent: 0,
-  small: false
+  small: false,
+  animated: false
 };
 
 

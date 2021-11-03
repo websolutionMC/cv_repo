@@ -85,7 +85,11 @@ const App: React.FC = () => {
               {myDate.skills.map((item, index) => (
                 <React.Fragment key={index}>
                   <h4>{item.name}</h4>
-                  <Progress percent={item.percent}></Progress>
+                  <Progress 
+                    percent={item.percent}
+                    animated={true}
+                    >
+                  </Progress>
                 </React.Fragment>
               ))}
             </Wrapper>
