@@ -14,7 +14,8 @@ import Progress from './components/base/ProgressBar';
 
 import { MyDataWrapper, Img, LayerImg, ImgWrapper, MyName, Job, AboutLeft, Title, About, Wrapper, YearCompany, InfoCompany } from './components/Components.group';
 import './App.css';
-import { data } from './data/data';
+import { data_pl } from './data/data_pl';
+import { data_en } from './data/data_en';
 
 import { useTranslation } from 'react-i18next';
 import React from 'react';
@@ -25,10 +26,21 @@ const App: React.FC = () => {
   const { t } = useTranslation();
 
   const getLanguage = () => i18n.language;
-  
-  const lng = getLanguage();  
 
-   let myDate = data[lng];
+  const lng = getLanguage();
+
+  let myDate = data_pl;
+
+  switch (lng) {
+    case 'pl':
+      myDate = data_pl;
+      break;
+    case 'en':
+      myDate = data_en;
+      break;
+    default:
+ 
+  }
 
   return (
     <>
@@ -92,10 +104,10 @@ const App: React.FC = () => {
               {myDate.skills.map((item, index) => (
                 <React.Fragment key={index}>
                   <h4>{item.name}</h4>
-                  <Progress 
+                  <Progress
                     percent={item.percent}
                     animated={true}
-                    >
+                  >
                   </Progress>
                 </React.Fragment>
               ))}
