@@ -7,7 +7,7 @@ import en from '../assets/en.png';
 const LanguageButtonStyled = styled.div`
   position: absolute;
   top: .25rem;
-  right: .5rem;
+  left: 0;
   
 `;
 
@@ -15,14 +15,18 @@ const ButtonStyled = styled.button`
   background-color: transparent;
   cursor: pointer;
   border: 0;
-  padding: .5rem;
+  padding: .25rem .5rem .1rem;
   margin-left: .25rem;
+
+  :hover {
+    border-radius: .25rem;
+    background-color: #1f4f64;
+  }
 
 `;
 
 
 const LanguageButton = () => {
-
 
   const {t, i18n } = useTranslation();
 

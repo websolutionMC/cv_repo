@@ -66,7 +66,7 @@ export const Title = styled.h3`
     text-transform: uppercase;
     font-weight: 600;
     letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
+    margin: .5rem 0;
 `;
 
 export const About = styled.div`

@@ -1,7 +1,6 @@
 import 'react-i18next';
 import i18n from 'i18next';
 
-import { FaBeer } from 'react-icons/fa';
 
 import DefaultTag from './components/defaultStyle'
 import Container from './components/default/Container';
@@ -11,6 +10,7 @@ import LeftColumn from './components/default/LeftColumn';
 import RightColumn from './components/default/RightColumn';
 import LanguageButton from './components/LanguageButton';
 import Progress from './components/base/ProgressBar';
+import Contact from './components/default/Contact';
 
 import { MyDataWrapper, Img, LayerImg, ImgWrapper, MyName, Job, AboutLeft, Title, About, Wrapper, YearCompany, InfoCompany } from './components/Components.group';
 import './App.css';
@@ -39,7 +39,7 @@ const App: React.FC = () => {
       myDate = data_en;
       break;
     default:
- 
+
   }
 
   return (
@@ -47,6 +47,7 @@ const App: React.FC = () => {
       <DefaultTag></DefaultTag>
       <Container>
         <LeftColumn>
+          <LanguageButton></LanguageButton>
           <MyDataWrapper>
             <ImgWrapper>
               <LayerImg></LayerImg>
@@ -61,6 +62,7 @@ const App: React.FC = () => {
             <Title>
               {t("titles.contact")}
             </Title>
+            <Contact data = {myDate.contact}></Contact>
           </AboutLeft>
           <AboutLeft>
             <Title>
@@ -74,7 +76,6 @@ const App: React.FC = () => {
           </AboutLeft>
         </LeftColumn>
         <RightColumn>
-          <LanguageButton></LanguageButton>
           <About>
             <Title>{t("titles.aboutMe")}</Title>
             <p>{myDate.aboutMe}</p>

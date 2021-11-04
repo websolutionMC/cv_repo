@@ -7,7 +7,11 @@ export const data_pl = {
       phone: "+48 728 248 756",
       email: "mateusz.czarnik1@gmail.com",
       git: "websolutionMC",
-      linkedin: "mateusz-czarnik-2430b8b6",
+      linkedin: {
+        link: "mateusz-czarnik-2430b8b6",
+        text: "Mateusz Czarnik",
+      },
+      
       city: "Rzeszów",
       country: "Poland"
     },
