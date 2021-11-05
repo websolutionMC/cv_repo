@@ -11,5 +11,9 @@ export const TRANSLATIONS_EN = {
     language: {
         pl: "Polish",
         en: "English"
+    },
+    foreignLanguages: {
+        read: "Reading",
+        speak: "Speech"
     }
 }

@@ -13,7 +13,7 @@ const ProgressStyled = styled.span<ProgressSize>`
   display: block;
   margin-top: 5px;
   border: 1px solid #747474;
-  box-shadow: 3px 5px 4px -2px rgb(156 156 156);
+  box-shadow: ${({ small }) => (small ? "3px 5px 4px -2px rgb(25 25 25);" : "3px 5px 4px -2px rgb(156 156 156);")};
 
   @keyframes progress-bar-stripes {
     from  { background-position: 1rem 0; }
@@ -30,14 +30,7 @@ const ProgressBarBgStyled = styled.div<Animated>`
     top: 0;
     left: 0;
     height: 100%;
-    background-image: linear-gradient(
-      45deg,rgba(255,255,255,.15) 25%,
-      transparent 25%,
-      transparent 50%,
-      rgba(255,255,255,.15) 50%,
-      rgba(255,255,255,.15) 75%,
-      transparent 75%,transparent
-      );
+
     background-size: 1rem 1rem;    
     transition: width .6s ease;
     background-color: #03a9f4;
@@ -45,6 +38,14 @@ const ProgressBarBgStyled = styled.div<Animated>`
     ${({ animated }) =>
     animated &&
       css`
+      background-image: linear-gradient(
+        45deg,rgba(255,255,255,.15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255,255,255,.15) 50%,
+        rgba(255,255,255,.15) 75%,
+        transparent 75%,transparent
+        );
         animation: progress-bar-stripes 1s linear infinite;
       `
     }

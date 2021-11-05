@@ -9,7 +9,7 @@ import styled from "styled-components";
   display: grid;
   grid-template-columns: 1fr 2fr;
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
-  margin: 0 auto;
+  margin: .5rem auto;
   border-radius: .25rem;
 
   @media screen and (max-width:1100px) {

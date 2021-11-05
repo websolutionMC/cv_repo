@@ -16,6 +16,7 @@ export const ImgWrapper = styled.div`
   border-radius: 50%;
   overflow: hidden;
   background-color: white;
+  box-shadow: 9px 11px 16px -4px rgb(0 0 0);
 `;
 
 export const Img = styled.img`
@@ -59,6 +60,10 @@ export const AboutLeft = styled.div`
     align-items: left;
     padding: 1rem 0;
     border-bottom: 1px solid rgba(245, 245, 245, 0.2);
+
+    &:last-child {
+      border-bottom: 0;
+    }
 `;
 
 
@@ -157,7 +162,15 @@ export const Wrapper = styled.div<PropsSkills>`
   }
 `;
 
+export const LanguageInfo = styled.div`
+  margin: .5rem 0;
+  line-height: 1.5rem;
 
+  div {
+    margin-left: 1rem;
+  }
+  
+`;
 
 
 /*
@@ -168,22 +181,7 @@ export const Wrapper = styled.div<PropsSkills>`
 
 
 
-export const Content = styled.div`
-  padding-top: 40px;
 
-  ul {
-    position: relative;
-    margin: 0;
-    padding: 0;
-  }
-
-  li {
-    position: relative;
-    list-style: none;
-    margin: 10px 0;
-    cursor: pointer;
-  }
-`;
 
 export const Title = styled.h3`
   color: #fff;

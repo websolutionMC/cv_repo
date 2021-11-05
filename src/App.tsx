@@ -12,7 +12,7 @@ import LanguageButton from './components/LanguageButton';
 import Progress from './components/base/ProgressBar';
 import Contact from './components/default/Contact';
 
-import { MyDataWrapper, Img, LayerImg, ImgWrapper, MyName, Job, AboutLeft, Title, About, Wrapper, YearCompany, InfoCompany } from './components/Components.group';
+import { MyDataWrapper, Img, LayerImg, ImgWrapper, MyName, Job, AboutLeft, Title, About, Wrapper, YearCompany, InfoCompany, LanguageInfo } from './components/Components.group';
 import './App.css';
 import { data_pl } from './data/data_pl';
 import { data_en } from './data/data_en';
@@ -59,26 +59,57 @@ const App: React.FC = () => {
             </MyName>
           </MyDataWrapper>
           <AboutLeft>
-            <Title>
-              {t("titles.contact")}
-            </Title>
-            <Contact data = {myDate.contact}></Contact>
+            <Title>{t("titles.contact")}</Title>
+            <Contact data={myDate.contact}></Contact>
           </AboutLeft>
           <AboutLeft>
-            <Title>
-              {t("titles.education")}
-            </Title>
-          </AboutLeft>
-          <AboutLeft>
-            <Title>
-              {t("titles.languages")}
-            </Title>
+            <Title>{t("titles.languages")}</Title>
+
+            {myDate.languages.map((item, index) => (
+              <div>
+                <React.Fragment key={index}>
+                  <LanguageInfo>
+                    {item.name}:
+                    <div>
+                      <span>{t("foreignLanguages.read")}:</span> {item.read} <br />
+                      <span>{t("foreignLanguages.speak")}:</span> {item.speaking}
+                    </div>
+                  </LanguageInfo>
+                  <Progress
+                    small
+                    percent={item.percent}
+                    animated={false}
+                  >
+                  </Progress>
+                </React.Fragment>
+              </div>
+            ))}
           </AboutLeft>
         </LeftColumn>
         <RightColumn>
           <About>
             <Title>{t("titles.aboutMe")}</Title>
             <p>{myDate.aboutMe}</p>
+          </About>
+          <About>
+            <Title>
+              {t("titles.education")}
+            </Title>
+            {
+              myDate.education.map((item, index) => (
+                <Wrapper key={index}>
+                  <YearCompany>
+                    <h5>
+                      {item.date.start} - {item.date.end}
+                    </h5>
+                  </YearCompany>
+                  <InfoCompany>
+                    <h4>{item.name}</h4>
+                    <p>{item.specification}</p>
+                  </InfoCompany>
+                </Wrapper>
+              ))
+            }
           </About>
           <About>
             <Title>{t("titles.experience")}</Title>

@@ -26,12 +26,14 @@ export const data_pl = {
       {
         name: "Angielski",
         read: "B2",
-        speaking: "B1"
+        speaking: "B1",
+        percent: 50
       },
       {
         name: "Niemiecki",
         read: "B2",
-        speaking: "B1"
+        speaking: "B1",
+        percent: 50
       },
     ],
     education: [
