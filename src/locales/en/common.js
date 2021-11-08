@@ -13,7 +13,8 @@ export const TRANSLATIONS_EN = {
         en: "English"
     },
     foreignLanguages: {
-        read: "Reading",
-        speak: "Speech"
-    }
+        read: "Read.",
+        speak: "Sp."
+    },
+    motto : "In my work I am guided by: "
 }

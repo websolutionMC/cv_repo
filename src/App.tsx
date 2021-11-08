@@ -69,11 +69,9 @@ const App: React.FC = () => {
               <div>
                 <React.Fragment key={index}>
                   <LanguageInfo>
-                    {item.name}:
-                    <div>
-                      <span>{t("foreignLanguages.read")}:</span> {item.read} <br />
-                      <span>{t("foreignLanguages.speak")}:</span> {item.speaking}
-                    </div>
+                    {item.name}: {' '}
+                    <span>{t("foreignLanguages.read")}:</span> {item.read}, {' '}
+                    <span>{t("foreignLanguages.speak")}:</span> {item.speaking}
                   </LanguageInfo>
                   <Progress
                     small
@@ -90,6 +88,12 @@ const App: React.FC = () => {
           <About>
             <Title>{t("titles.aboutMe")}</Title>
             <p>{myDate.aboutMe}</p>
+            {myDate.motto && (
+              <>
+                <p>{t('motto')}</p>
+                <blockquote>{myDate.motto}</blockquote>
+              </>
+            )}
           </About>
           <About>
             <Title>

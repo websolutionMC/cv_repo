@@ -2,7 +2,8 @@ export const data_pl = {
     name: "Mateusz",
     surname: "Czarnik",
     job: "Fullstack Developer",
-    aboutMe: "Ullamco elit amet nulla fugiat excepteur incididunt consectetur irure quis. Consequat occaecat sunt quis minim veniam consectetur aute quis officia elit. Adipisicing do cillum Lorem in. Laboris ea pariatur eu aliquip nulla magna officia deserunt labore. Deserunt laboris amet ut reprehenderit nisi aute. Consectetur aliqua mollit do veniam ullamco cillum ipsum officia. Lorem amet velit fugiat nulla eiusmod dolor aute qui velit.",
+    aboutMe: "Jestem absolwentem kierunku Informatyka o specjalności Inżynieria oprogramowania na Politechnice Rzeszowskiej. Swoją karierę programistyczną rozpocząłem w firmie Netspace w Rzeszowie, gdzie pracowałem jako Fullstack developer. Poprzez lata pracy zdobyłem cenne doświadczenie oraz poznałem wiele nowych technologii. Naczyłem się optymalizacji kodu. Poszukuję pracy jako backend developer, który pozwoli mi na dalszy rozwój osobisty. Szybko uczę się nowych technologii. Do moich zainteresowań należy sztuczna inteligencja, na temat której napisałem i obroniłem pracę magisterską.",
+    motto: "Nie istnieją rzeczy niemożliwe, wymagają one jedynie odpowiednią ilość zasobów, gdzie najważniejszym z nich jest czas",
     contact: {
       phone: "+48 728 248 756",
       email: "mateusz.czarnik1@gmail.com",

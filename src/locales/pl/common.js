@@ -13,8 +13,9 @@ export const TRANSLATIONS_PL = {
         en: "Angielski"
     },
     foreignLanguages: {
-        read: "Czytanie",
+        read: "Czyt.",
         speak: "Mowa"
-    }
+    },
+    motto : "W swojej pracy kieruję się mottem: "
     
 }

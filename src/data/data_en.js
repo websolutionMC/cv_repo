@@ -2,7 +2,8 @@ export const data_en = {
       name: "Mateusz",
       surname: "Czarnik",
       job: "Fullstack Developer",
-      aboutMe: "Commodo Lorem reprehenderit voluptate culpa non. Velit pariatur nulla non nostrud veniam consectetur ad exercitation. Dolore qui ea aliqua enim. Sit quis occaecat et velit pariatur velit aliqua ex est quis aliqua. Reprehenderit anim esse tempor labore ea ut amet.",
+      aboutMe: "I'm a graduate of Computer Science faculty with specialization in Software Engineering on University of Technology in Rzeszow. I started my programming career in Netspace company in Rzeszow, where I worked as a Fullstack developer. Through the years of work I gained valuable experience and learned a lot of new technologies. I learned to optimize the code. I am looking for a job as a backend developer, which will allow me to further personal development. I learn new technologies quickly. My interests include artificial intelligence, on which I wrote and defended my master's thesis.",
+      motto: "There are no impossible things, they just require the right amount of resources, the most important of which is time",
       contact: {
         phone: "+48 728 248 756",
         email: "mateusz.czarnik1@gmail.com",
